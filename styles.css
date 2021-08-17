@@ -104,41 +104,27 @@ nav a:hover::before {
   top: 20px
 }
 
-/* Callout box - fixed position at the bottom of the page */
-.callout {
-    position: fixed;
-    bottom: 35px;
-    right: 20px;
-    margin-left: 20px;
-    max-width: 300px;
-}
-  
-  /* Callout header */
-.callout-header {
-    padding: 25px 15px;
-    background: #555;
-    font-size: 30px;
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
     color: white;
-}
+    margin-bottom: 15px;
+  }
   
-  /* Callout container/body */
-.callout-container {
-    padding: 15px;
-    background-color: #ccc;
-    color: black
-}
-  
-  /* Close button */
+  /* The close button */
 .closebtn {
-    position: absolute;
-    top: 5px;
-    right: 15px;
+    margin-left: 15px;
     color: white;
-    font-size: 30px;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
     cursor: pointer;
-}
+    transition: 0.3s;
+  }
   
-  /* Change color on mouse-over */
+  /* When moving the mouse over the close button */
 .closebtn:hover {
-    color: lightgrey;
-}
+    color: black;
+  }
