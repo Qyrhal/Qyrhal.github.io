@@ -104,10 +104,10 @@ nav a:hover::before {
   top: 20px
 }
 
-/* The alert message box */
-.alert {
+/* The info message box */
+.info {
     padding: 20px;
-    background-color: #f44336; /* Red */
+    background-color: #49869e; /* Blue */
     color: white;
     margin-bottom: 15px;
   }
