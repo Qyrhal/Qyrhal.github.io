@@ -105,7 +105,7 @@ nav a:hover::before {
 }
 
 /* The info message box */
-.info {
+.alert {
     padding: 20px;
     background-color: #49869e; /* Blue */
     color: white;
