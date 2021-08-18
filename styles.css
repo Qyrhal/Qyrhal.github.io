@@ -128,7 +128,3 @@ nav a:hover::before {
 .closebtn:hover {
     color: black;
 }
-
-.link {
-  border: 2px;
-}
