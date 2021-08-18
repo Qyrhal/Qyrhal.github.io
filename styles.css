@@ -128,8 +128,3 @@ nav a:hover::before {
 .closebtn:hover {
     color: black;
 }
-
-.Dbalink {
-  height: 200px;
-  width: 200px;
-}
