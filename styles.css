@@ -127,4 +127,9 @@ nav a:hover::before {
   /* When moving the mouse over the close button */
 .closebtn:hover {
     color: black;
-  }
+}
+
+.Dbalink {
+  height: 200px;
+  width: 200px;
+}
