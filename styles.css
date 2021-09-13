@@ -84,5 +84,10 @@ nav a:hover::before {
 }
 
 .paragraph {
-  background-color: #000;
+  background-color: #228B22;
+  border-radius: 90px;
+  width: 90%;
+  height: 100px;
+  margin: 75px;
+  border: 1px solid rgba(0, 0, 0, .2);
 }
