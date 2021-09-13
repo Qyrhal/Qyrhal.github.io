@@ -83,3 +83,6 @@ nav a:hover::before {
   width: 100%;
 }
 
+.paragraph {
+  background-color: #000;
+}
