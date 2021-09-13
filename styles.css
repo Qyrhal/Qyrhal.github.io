@@ -21,10 +21,12 @@ body {
 }
 
 header {
-  background: #107a21;
+  border-radius: 200px;
+  background: #228B22;
 }
 
 header::after {
+  border-radius: 200px;
   content: '';
   display: table;
   clear: both;
