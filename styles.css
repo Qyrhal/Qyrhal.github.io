@@ -1,10 +1,11 @@
 body {
 	margin: 0;
-    background-color: 	#181818;
-    background-repeat: no-repeat;
-	 font-family: 'Work Sans', sans-serif;
-	 font-weight: 800;
-    height: 100vh;
+  background-color: 	#181818;
+  background-repeat: no-repeat;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+  height: 100vh;
+  color: #C0C0C0;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
@@ -34,7 +35,7 @@ header::after {
 
 .logo {
   float: left;
-  padding: 10px 0;
+
 }
 
 nav {
@@ -90,5 +91,26 @@ nav a:hover::before {
   margin: 20px;
   background-color:	#303030;
   border-radius: 20px;
-  height: 100px;
+  height: 80px;
+}
+
+.paragraph2 {
+  width: 95%;
+  border: 3px solid #73AD21;
+  padding: 10px; 
+  margin: 20px;
+  background-color:	#303030;
+  border-radius: 20px;
+  height: 400px;
+}
+
+.obizlink {
+  color: plum;
+}
+
+.obizmainimage1 {
+  height: 50px;
+  width: 50px;
+  right: 20%;
+  border-radius: 25%;
 }
