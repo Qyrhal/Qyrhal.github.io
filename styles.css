@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-  background-color: 	#23272A;
+  background-color: 	#25313a;
   background-repeat: no-repeat;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
@@ -11,7 +11,7 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 body {
 	margin: 0;
-	background: #222;
+	background: #181e24;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
 }
@@ -23,7 +23,7 @@ body {
 
 header {
   border-radius: 200px;
-  background:	#383838;
+  background:	#23272A;
 }
 
 header::after {
@@ -64,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: #23272A;
 }
 
 nav a::before {
