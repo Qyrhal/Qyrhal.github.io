@@ -289,27 +289,41 @@ hr {
   border: none;
 }
 
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: #f44336; /* Red */
-  color: white;
-  margin-bottom: 15px;
+/* Callout box - fixed position at the bottom of the page */
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
 }
 
-/* The close button */
+/* Callout header */
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+/* Callout container/body */
+.callout-container {
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+/* Close button */
 .closebtn {
-  margin-left: 15px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
   color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 30px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-/* When moving the mouse over the close button */
+/* Change color on mouse-over */
 .closebtn:hover {
-  color: black;
+  color: green;
 }
