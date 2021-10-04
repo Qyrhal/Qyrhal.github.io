@@ -30,3 +30,5 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+alert("Developmental domain, proper domain soon.");
