@@ -283,3 +283,8 @@ div#features:hover {
   padding: 18px;
 }
 
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
