@@ -138,8 +138,8 @@ button:hover, a:hover {
 /* Just add .fade-in class to element */
 
 #fade-in {
-	animation: fadeIn 2s;
-  	opacity: 1;
+	animation: fadeIn 4s;
+  opacity: 1;
 }
 
 @keyframes fadeIn {
