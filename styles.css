@@ -2,7 +2,6 @@ body {
   background-color: #2c2f33;
   color: #f1f1f1;
 }
-
 /* Style the header: fixed position (always stay at the top) */
 .header {
   position: fixed;
