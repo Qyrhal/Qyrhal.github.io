@@ -1,87 +1,72 @@
 body {
-    background-color: #333;
-    color: #fff;
-  }
+  background-color: #444444;
+  opacity: 0.8;
+  background-image:  linear-gradient(#646464 2px, transparent 2px), linear-gradient(90deg, #646464 2px, transparent 2px), linear-gradient(#646464 1px, transparent 1px), linear-gradient(90deg, #646464 1px, #444444 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  color: #ffffff;
+  margin: 0;
+}
 
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #222; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
 
-  * {box-sizing:border-box}
+.typing-demo {
+  width: 26ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 40%;
-    text-align: center;
-    background-color: #111;
-    align-self: auto;
-    float: left;
-    margin: 1%;
+@keyframes typing {
+  from {
+    width: 0
   }
-  
-.title {
-    color: grey;
-    font-size: 18px;
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: crosshair;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
+}
 
-.cards{
-  padding-bottom: 1vh;
+#main-navbar {
+  font: 1.15em Arial;
+  background: #444444;
+}
+
+/* Remove default <ul> margin and padding */
+#main-navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#main-navbar li {
+  /* Use inline-block so that every element can have its height and width property */
+  display: inline-block;
+  /* Give padding so there's space above / below / on the sides of the menu */
+  padding: 10px 20px;
+}
+
+#main-navbar li a {
+  /* Remove the underline for the link */
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#main-navbar li a:hover {
+  /* When hovering around the menu, there'll be bottom border 3px width, distance is 3px from the menu */
+  border-bottom: 3px solid;
+  padding-bottom: 3px;
+  /* Optional, brighter color so the menu looks like highlighted */
+  color: #FFFFFF;
 }
