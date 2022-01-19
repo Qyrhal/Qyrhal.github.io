@@ -70,3 +70,9 @@ body {
   /* Optional, brighter color so the menu looks like highlighted */
   color: #FFFFFF;
 }
+
+.footer {
+  background-color: #444444;
+  text-align: center;
+  margin: 0;
+}
