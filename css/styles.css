@@ -41,7 +41,7 @@ body {
 
 @media only screen and (max-device-width: 480px) {
   #main-navbar {
-    font: 25px Arial;
+    font: 15px Arial;
     background: #444444;
   }
   
