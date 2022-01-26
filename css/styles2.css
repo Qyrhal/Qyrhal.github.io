@@ -206,28 +206,7 @@
       text-align: center;
       overflow: hidden;
     }
-    
-    .navbar li {
-      padding: 15px;
-    }
-    
-    .navbar li:first-child {
-      margin-top: 50px;
-    }
-    
-    .navbar li a {
-      font-size: 1rem;
-    }
-     
-    .menu-toggle, .bar {
-      display: block;
-      cursor: pointer;
-    }
-    
-    .mobile-nav {
-    transform: translate(0%)!important;
-  }
-    
+         
     /* SECTIONS */
     
     .headline {
@@ -255,5 +234,14 @@
     .search-input {
     display: none;
    }
+
+   .glass{
+    color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.2 );
+    border: solid 1px rgba(0,0,0,.3);
+    backdrop-filter: blur(10px );
+  }
     
 }
