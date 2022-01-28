@@ -1,108 +1,49 @@
 body {
-  background-color: #444444;
-  opacity: 0.8;
-  background-image:  linear-gradient(#646464 2px, transparent 2px), linear-gradient(90deg, #646464 2px, transparent 2px), linear-gradient(#646464 1px, transparent 1px), linear-gradient(90deg, #646464 1px, #444444 1px);
-  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-  color: #ffffff;
-  margin: 0;
+  margin:0;
+  background-color:#191919;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Helvetica,Sans-serif;
 }
 
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+h1{
+  color: aliceblue;
+  align-self: auto;
 }
 
-.typing-demo {
-  width: 27ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 10vh;
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
-
-@media only screen and (max-device-width: 480px) {
-  #main-navbar {
-    font: 15px Arial;
-    background: #444444;
-  }
-  
-  /* Remove default <ul> margin and padding */
-  #main-navbar ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #main-navbar li {
-    /* Use inline-block so that every element can have its height and width property */
-    display: inline-block;
-    /* Give padding so there's space above / below / on the sides of the menu */
-    padding: 10px 20px;
-  }
-  
-  #main-navbar li a {
-    /* Remove the underline for the link */
-    text-decoration: none;
-    color: #FFFFFF;
-  }
-  
-  #main-navbar li a:hover {
-    /* When hovering around the menu, there'll be bottom border 3px width, distance is 3px from the menu */
-    border-bottom: 3px solid;
-    padding-bottom: 3px;
-    /* Optional, brighter color so the menu looks like highlighted */
-    color: #FFFFFF;
-  }  
-}
-
-@media only screen and (min-device-width: 481px) {
-  #main-navbar {
-    font: 1.15em Arial;
-    background: #444444;
-  }
-  
-  /* Remove default <ul> margin and padding */
-  #main-navbar ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #main-navbar li {
-    /* Use inline-block so that every element can have its height and width property */
-    display: inline-block;
-    /* Give padding so there's space above / below / on the sides of the menu */
-    padding: 10px 20px;
-  }
-  
-  #main-navbar li a {
-    /* Remove the underline for the link */
-    text-decoration: none;
-    color: #FFFFFF;
-  }
-  
-  #main-navbar li a:hover {
-    /* When hovering around the menu, there'll be bottom border 3px width, distance is 3px from the menu */
-    border-bottom: 3px solid;
-    padding-bottom: 3px;
-    /* Optional, brighter color so the menu looks like highlighted */
-    color: #FFFFFF;
+@keyframes slidebg {
+  to {
+    background-position:20vw;
   }
 }
