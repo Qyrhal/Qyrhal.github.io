@@ -195,5 +195,16 @@
         border-color: transparent
       }
     }
+
+    .btn_link{
+      display: none;
+      background-color: darkgrey;
+      color: cornflowerblue;
+    }
+
+    .section{
+      margin: 0%;
+      height: 10vh;  
+    }
     
   }
