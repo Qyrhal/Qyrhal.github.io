@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-color: #333;
+    color: #eee;
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70vh;
+  }
+
+  .page-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-wrapper {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #333;
+  }
+  
+  .grad-bar {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+        -webkit-animation: gradbar 15s ease infinite;
+      -moz-animation: gradbar 15s ease infinite;
+      animation: gradbar 15s ease infinite;
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }   
+    
+    h1{
+        font-size:45px;
+        font-weight:500;
+        text-transform:uppercase;
+    }
+
+    .glass{
+        color: #ecf0f1;
+        border-radius: 8px;
+        padding: 20px;
+        background: rgba( 255, 255, 255, 0.2 );
+        border: solid 1px rgba(255,255,255,.3);
+        backdrop-filter: blur(10px );
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: white;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 204, 255, 0.8);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(0,204,255,0.8);
+    }
+
+    footer {
+      display: block;
+      text-align: center;
+      padding: 3px;
+      background-color: DarkSalmon;
+      color: white;
+    }
+    
+    .wrapper {
+      height: 100vh;
+      /*This part is important for centering*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    
+    .typing-demo {
+      width: 27ch;
+      animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 10vh;
+    }
+    
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+        
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
+    }
+
+    .btn_link{
+      display: none;
+      background-color: darkgrey;
+      color: cornflowerblue;
+    }
+
+    .section{
+      margin: 0%;
+      height: 10vh;  
+    }
+
+    .content-table {
+        border-collapse: collapse;
+        margin: 40px;
+        font-size: 0.9em;
+        min-width: 600px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        width: 50vh;
+      }
+      
+      .content-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+      }
+      
+      .content-table th,
+      .content-table td {
+        padding: 50px 30px;
+      }
+      
+      .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+      
+      .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      
+      .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+      
+    
+  }
