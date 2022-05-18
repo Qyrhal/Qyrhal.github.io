@@ -1,0 +1,160 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81d4fa;
+}
+body:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(50% - 185px);
+    bottom: 0;
+    position: absolute;
+    background-color: #66bb6a;
+}
+.swing {
+    position: relative;
+}
+.swing:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #90a4ae;
+    position: absolute;
+    left: -7.5px;
+    top: -7.5px;
+    border-radius: 50%;
+    z-index: 100;
+}
+.swing .base-left-block {
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    background-color: #90a4ae;
+    left: -90px;
+    top: 178px;
+}
+.swing .base-right-block {
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    background-color: #90a4ae;
+    left: 76px;
+    top: 178px;
+}
+.swing .base-left {
+    width: 4px;
+    height: 200px;
+    background-color: #90a4ae;
+    position: absolute;
+    left: -2px;
+    transform-origin: top center;
+    transform: rotate(25deg);
+}
+.swing .base-right {
+    width: 4px;
+    height: 200px;
+    background-color: #90a4ae;
+    position: absolute;
+    left: -2px;
+    transform-origin: top center;
+    transform: rotate(-25deg);
+}
+.swing .string {
+    width: 4px;
+    height: 150px;
+    background-color: black;
+    animation: swing 1.25s infinite alternate ease-in-out;
+    transform: rotate(-35deg);
+    position: absolute;
+}
+.swing .duck {
+    width: 40px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.swing .duck .duck-head {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    position: relative;
+    border-radius: 15px 15px 12px 12px;
+}
+.swing .duck .duck-head .duck-eye {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+    left: 12px;
+    top: 6px;
+}
+.swing .duck .duck-head .duck-bill {
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    left: 25px;
+    top: 9px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 8px;
+    background: #fdd835;
+}
+.swing .duck .duck-body {
+    width: 26px;
+    height: 45px;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 12px;
+}
+.swing .duck .duck-feet {
+    width: 50px;
+    height: 14px;
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    position: relative;
+}
+.swing .duck .duck-feet:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50px;
+    width: 10px;
+    height: 20px;
+    top: -6px;
+    border-top-right-radius: 4px;
+    background-color: #fdd835;
+}
+.swing .duck .duck-feet:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    top: 14px;
+    left: 10px;
+    background-color: black;
+}
+.swing .duck-hand {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: -5px;
+}
+@keyframes swing {
+    from {
+        transform-origin: center top;
+        transform: rotate(-35deg);
+   }
+    to {
+        transform-origin: center top;
+        transform: rotate(35deg);
+   }
+}
