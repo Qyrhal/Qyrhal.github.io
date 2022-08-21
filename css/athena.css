@@ -20,13 +20,13 @@
   }
 
   .dictionarybox {
-    background-color: rgb(241, 241, 241);
-    border-radius: 15px;
-    padding: 1vh;
+    background-color: rgb(213, 213, 213);
+    padding: 20px;
     margin: auto;
     margin-top: 2vh;
-    font-family: sans-serif;
-    width: 100vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    border-radius: 15px;
     box-shadow: 0px 10px 50px 0 rgba(0, 0, 0, 0.4);
   }
   
