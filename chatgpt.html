@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/@openai/openai@latest/dist/openai.min.js"></script>
+    <script>
+        openai.apiKey = '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';
+      </script>
+  </head>
+  <body>
+    <div id="chat"></div>
+    <input id="input" type="text" placeholder="Enter your message here" />
+    <button onclick="sendMessage()">Send</button>
+    <script>
+      const chat = document.getElementById('chat');
+      const input = document.getElementById('input');
+
+      async function sendMessage() {
+        const message = input.value;
+        input.value = '';
+
+        const response = await openai.text({
+          model: 'text-davinci-002',
+          prompt: message
+        });
+
+        chat.innerHTML += `<p>You: ${message}</p>`;
+        chat.innerHTML += `<p>Bot: ${response.data.text}</p>`;
+      }
+    </script>
+  </body>
+</html>
