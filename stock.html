@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid | Stock</title>
+    <link rel="stylesheet" href="css/freewatch.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://use.fontawesome.com/a3fe9be396.js"></script>
+	<script type="text/javascript" src="js/stock.js"></script>
+	<link rel="icon" type="image/png" href="img/icon.png"/>
+</head>
+<body>
+    <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Stocks
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="https://hydra-derp.github.io/">Home</a>
+    </div>
+  </div>
+
+  <div class="box" style="color: black;">
+    <h3>Stock Position Sizing Calculator</h2>
+    <form>
+        <ul>
+            Account Balance: <input type="number" id="balance" style="color: #fff; background-color: gray; border: gray; padding: 5px; font-size: medium;"><br><br>
+            Risk Percentage: <input type="number" id="risk" style="color: #fff; background-color: gray; border: gray; padding: 5px; font-size: medium;"><br><br>
+            Purchace Price: <input type="number" id="buy" style="color: #fff; background-color: gray; border: gray; padding: 5px; font-size: medium;"><br><br>
+            Stop Loss: <input type="number" id="stop_loss" style="color: #fff; background-color: gray; border: gray; padding: 5px; font-size: medium;"><br><br>
+            <input type="button" value="Calculate" onclick="calculate()" style="background-color: gray; border-radius: 5px; padding: 5px; color: #fff;">
+            <p>Risk Amount: $<span id="risk_amount"></span></p>
+            <p>Max Position Size: <span id="position_size"></span></p>
+        </ul>
+    </form>
+  </div>
+
+
+
+
+</body>
+</html>
+
