@@ -26,10 +26,10 @@ body.dark-mode {
   height: 100vh;
   background-color: #060606;
   opacity: 1;
-  background-image:  repeating-linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), repeating-linear-gradient(45deg, #121212 25%, #060606 25%, #060606 75%, #121212 75%, #121212);
+  /* background-image:  repeating-linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), repeating-linear-gradient(45deg, #121212 25%, #060606 25%, #060606 75%, #121212 75%, #121212);
   background-position: 0 0, 18px 18px;
   background-size: 36px 36px; 
-  background-image: url("https://4kwallpapers.com/images/wallpapers/desert-sand-dunes-night-moon-light-abu-dhabi-blue-5k-3840x1080-1512.jpg"); 
+  background-image: url("https://4kwallpapers.com/images/wallpapers/desert-sand-dunes-night-moon-light-abu-dhabi-blue-5k-3840x1080-1512.jpg"); */
   background-size: cover;
   background-repeat: no-repeat; 
   color: #fff;
@@ -43,12 +43,12 @@ body.light-mode {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #060606;
+  background-color: rgb(236, 247, 255);
   opacity: 1;
-  background-image:  repeating-linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), repeating-linear-gradient(45deg, #121212 25%, #060606 25%, #060606 75%, #121212 75%, #121212);
+  /* background-image:  repeating-linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), repeating-linear-gradient(45deg, #121212 25%, #060606 25%, #060606 75%, #121212 75%, #121212);
   background-position: 0 0, 18px 18px;
   background-size: 36px 36px; 
-  background-image: url("https://wallpapercave.com/wp/UuypBYq.jpg"); 
+  background-image: url("https://wallpapercave.com/wp/UuypBYq.jpg"); */
   background-size: cover;
   background-repeat: no-repeat; 
   color: #000;
@@ -69,7 +69,7 @@ body.light-mode {
   padding: 75px 50px;
   width: 100%;
   max-width: 800px;
-  background: rgba(68, 68, 68, 0.156);
+  background: rgba(68, 68, 68, 0.337);
   box-shadow: 0px 10px 50px 0 rgba(31, 135, 57, 0.265);
 /* CHANGE THIS TO CHANGE THE BLUR AMOUNT */
   backdrop-filter: blur( 10.0px );
