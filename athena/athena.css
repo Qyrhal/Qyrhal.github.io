@@ -156,7 +156,6 @@
     transform: rotate(-45deg) translate(-4px, -4px);
   }
 
-
   @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
