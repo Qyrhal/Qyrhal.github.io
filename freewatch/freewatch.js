@@ -200,11 +200,11 @@ const AddCards = () => {
             
             if (j == 0) {
                 button1.addEventListener("click", function () {
-                    window.location.href = "https://stream.crichd.vip/update/skyf1.php/";
+                    window.location.href = "https://hydra-derp.github.io/freewatch/formula-one/";
                 });
             } else if (j == 1) {
                 button1.addEventListener("click", function () {
-                    window.location.href = "https://stream.crichd.vip/update/skys2.php/";
+                    window.location.href = "https://hydra-derp.github.io/freewatch/t20-cricket/";
                 });
             }
 
