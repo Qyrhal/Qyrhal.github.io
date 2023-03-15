@@ -17,6 +17,14 @@ let cards = [
         title: "Formula One",
         description:
             "24/7 Skysports F1 livestream"
+    },
+    {
+        background: "https://wallpapercave.com/wp/wp5556247.jpg",
+        display_background:
+            "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages2.alphacoders.com%2F845%2F84502.jpg&f=1&nofb=1",
+        title: "BasketBall",
+        description:
+            "24/7 BBC Basketball livestream"
     }
 ];
 
@@ -200,11 +208,15 @@ const AddCards = () => {
             
             if (j == 0) {
                 button1.addEventListener("click", function () {
+                    window.location.href = "https://hydra-derp.github.io/freewatch/t20-cricket/";
+                });
+            } else if (j == 1) {
+                button1.addEventListener("click", function () {
                     window.location.href = "https://hydra-derp.github.io/freewatch/formula-one/";
                 });
             } else if (j == 1) {
                 button1.addEventListener("click", function () {
-                    window.location.href = "https://hydra-derp.github.io/freewatch/t20-cricket/";
+                    window.location.href = "https://hydra-derp.github.io/freewatch/basketball/";
                 });
             }
 
