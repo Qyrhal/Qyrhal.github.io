@@ -208,15 +208,15 @@ const AddCards = () => {
             
             if (j == 0) {
                 button1.addEventListener("click", function () {
-                    window.location.href = "https://hydra-derp.github.io/freewatch/t20-cricket/";
+                    window.location.href = "https://qyrhal.github.io/freewatch/t20-cricket/";
                 });
             } else if (j == 1) {
                 button1.addEventListener("click", function () {
-                    window.location.href = "https://hydra-derp.github.io/freewatch/formula-one/";
+                    window.location.href = "https://qyrhal.github.io/freewatch/formula-one/";
                 });
             } else if (j == 1) {
                 button1.addEventListener("click", function () {
-                    window.location.href = "https://hydra-derp.github.io/freewatch/basketball/";
+                    window.location.href = "https://qyrhal.github.io/freewatch/basketball/";
                 });
             }
 
