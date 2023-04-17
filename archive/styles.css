@@ -1,0 +1,151 @@
+
+/*body {
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #060606;
+  opacity: 1;
+  background-image:  repeating-linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), repeating-linear-gradient(45deg, #121212 25%, #060606 25%, #060606 75%, #121212 75%, #121212);
+  background-position: 0 0, 18px 18px;
+  background-size: 36px 36px; 
+  background-image: url("https://images.pling.com/img/00/00/62/69/92/1719799/minimalist-desktop-101.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+} */
+body {
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #060606;
+  opacity: 1;background-color: #1e1e1e;
+  opacity: 0.9;
+  background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
+  background-size: 28px 49px;
+  background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;
+  background-size: cover;
+}
+
+body.dark-mode {
+  color: #fff;
+  background-color: #1e1e1e;
+  opacity: 0.9;
+  background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
+  background-size: cover;
+  background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;
+}
+
+body.light-mode {
+  color: #000;
+  background-color: #E1E1E1;
+  opacity: 0.8;
+  background-image:  linear-gradient(30deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(150deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(30deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(150deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(60deg, #76767677 25%, transparent 25.5%, transparent 75%, #76767677 75%, #76767677), linear-gradient(60deg, #76767677 25%, transparent 25.5%, transparent 75%, #76767677 75%, #76767677);
+  background-size: cover;
+  background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;
+
+}
+
+.toggle-dark-light {
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10%;
+  margin: auto;
+  margin-right: 2em;
+  margin-top: .5em;
+  margin: 10px; 
+}
+
+.glassbox {
+  box-sizing: border-box;
+  padding: 75px 50px;
+  width: 100%;
+  max-width: 800px;
+  background: rgba(68, 68, 68, 0.337);
+  box-shadow: 0px 10px 50px 0 rgba(31, 135, 57, 0.265);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.2em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 1.5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 0.8em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: -15px;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+/* Style link on hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright text */
+.copyright {
+  position: fixed;
+  bottom: 40px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+}
+
+/* Left side of copyright text */
+.copyright-left {
+  left: 40px;
+}
+
+/* Right side of copyright text */
+.copyright-right {
+  right: 40px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Button hover state */
+.btn:hover {
+  background-color: #333;
+  color: #eee;
+  transition: background-color 0.2s ease;
+}

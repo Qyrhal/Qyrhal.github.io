@@ -1,151 +1,294 @@
-
-/*body {
-  margin: 0;
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #060606;
-  opacity: 1;
-  background-image:  repeating-linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), repeating-linear-gradient(45deg, #121212 25%, #060606 25%, #060606 75%, #121212 75%, #121212);
-  background-position: 0 0, 18px 18px;
-  background-size: 36px 36px; 
-  background-image: url("https://images.pling.com/img/00/00/62/69/92/1719799/minimalist-desktop-101.jpg"); 
-  background-size: cover;
-  background-repeat: no-repeat; 
-} */
 body {
-  margin: 0;
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #060606;
-  opacity: 1;background-color: #1e1e1e;
-  opacity: 0.9;
-  background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
-  background-size: 28px 49px;
-  background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;
-  background-size: cover;
+	font-family: "Proxima Nova", Helvetica, sans-serif;
+	background-color: #F5F5F7;
+	font-size: 14px;
+    color: #000000;
+    display: inline-block;
+    width: 100%;
+    font-weight: 300;
 }
 
-body.dark-mode {
-  color: #fff;
-  background-color: #1e1e1e;
-  opacity: 0.9;
-  background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
-  background-size: cover;
-  background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;
+body, p, h1, h2, h3, h4, h5, a, ol, li, pre, header {
+	margin: 0;
+	padding: 0;
 }
 
-body.light-mode {
-  color: #000;
-  background-color: #E1E1E1;
-  opacity: 0.8;
-  background-image:  linear-gradient(30deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(150deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(30deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(150deg, #767676 12%, transparent 12.5%, transparent 87%, #767676 87.5%, #767676), linear-gradient(60deg, #76767677 25%, transparent 25.5%, transparent 75%, #76767677 75%, #76767677), linear-gradient(60deg, #76767677 25%, transparent 25.5%, transparent 75%, #76767677 75%, #76767677);
-  background-size: cover;
-  background-position: 0 0, 0 0, 14px 25px, 14px 25px, 0 0, 14px 25px;
-
-}
-
-.toggle-dark-light {
-  padding: 1em;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10%;
-  margin: auto;
-  margin-right: 2em;
-  margin-top: .5em;
-  margin: 10px; 
-}
-
-.glassbox {
-  box-sizing: border-box;
-  padding: 75px 50px;
-  width: 100%;
-  max-width: 800px;
-  background: rgba(68, 68, 68, 0.337);
-  box-shadow: 0px 10px 50px 0 rgba(31, 135, 57, 0.265);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgb(255 255 255 / 15%);
-  text-align: center;
+a {
+	text-decoration: none;
 }
 
 h1 {
-  font-size: 36px;
-  line-height: 1.2em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 700;
+	font-size: 32px;
+	font-weight: 300;
 }
 
+
 h2 {
-  font-size: 25px;
-  line-height: 1.5em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 400;
+	font-size: 24px;
+	font-weight: 400;
 }
 
 h3 {
-  font-size: 16px;
-  line-height: 0.8em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 400;
-  letter-spacing: 5px;
-  margin-bottom: -15px;
+	font-size: 16px;
+	font-weight: 300;
+	padding-top: 8px;
 }
 
-a, a:visited {
-  text-decoration: none;
+h4 {
+	font-size: 14px;
+	font-weight: 200;
+	padding-top: 16px;
 }
 
-/* Style link on hover */
-a:hover {
-  text-decoration: underline;
+p {
+	font-size: 14px;
+	line-height: 22px;
+	color: #808080;
+	font-weight: 300;
+	padding-top: 8px;
 }
 
-/* Copyright text */
-.copyright {
-  position: fixed;
-  bottom: 40px;
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif;
-  color: #666;
+pre {
+	background-color: #ffffff;
+	border: 1px solid #E9E9F0;
+	border-radius: 3px;
+	padding: 24px;
+	white-space: pre-wrap;
+	line-height: 1.4;
+	margin: 16px 0;
 }
 
-/* Left side of copyright text */
-.copyright-left {
-  left: 40px;
+main {
+	margin: 0 auto;
+	width: 960px;
+	padding: 72px 24px 0 24px;
 }
 
-/* Right side of copyright text */
-.copyright-right {
-  right: 40px;
+footer {
+	border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.05);
+	padding: 24px 0 40px;
+	display: inline-block;
+	margin-top: 24px;
+	width: 100%;
 }
 
-/* Button */
-.btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #eee;
-  color: #333;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+header {
+	border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    display: inline-block;
+    height: 72px;
+    z-index: 10000;
 }
 
-/* Button hover state */
-.btn:hover {
-  background-color: #333;
-  color: #eee;
-  transition: background-color 0.2s ease;
+header nav, footer nav {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+a.button, a.button:visited {
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	text-transform: uppercase;
+	font-weight:600;
+	background-color: #009CFF;
+	margin: 8px 0;
+	padding: 10px 12px 9px 12px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 2px;
+}
+
+a.button:hover {
+	background-color: #008EE6;
+}
+
+a.button:active {
+	background-color: #007DCD;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+}
+
+a.text-link {
+	color: #009CFF;
+	text-decoration: none;
+}
+
+a.text-link:hover {
+	color: #007DCD;
+	border-bottom: 1px solid #007DCD;
+}
+
+.footer-nav a, .footer-nav:link a, .footer-nav:visited a {
+	display: block;
+	padding: 8px 24px;
+	color: #888888;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.footer-nav:hover a, .footer-nav:active a {
+	color: #009CFF;
+}
+
+.footer-hello {
+	float: left;
+	display: inline-block;
+	font-size: 16px;
+	padding-right: 24px;
+}
+
+/* ------ Main Page ------ */
+
+section#projects {
+	margin-top: 56px;
+	min-height: 500px;
+}
+
+nav#sections ol {
+	list-style: none;
+	padding: 0;
+}
+
+nav#sections li {
+	display: inline-block;
+}
+
+ol.offerings li {
+	background: white;
+	border: 1px solid #EBEBF0;
+	border-radius: 3px;
+	box-shadow: 0px 1px 3px 0px rgba(235,235,240,1);
+	padding: 32px 32px 0px 32px;
+	width: 405px;
+	min-height: 160px;
+	margin-top: 20px;
+}
+
+nav > ol {
+	list-style: none;
+	padding: 0;
+}
+
+header img {
+	padding: 22px 0;
+}
+
+.header-img {
+	height: 180px;
+	width: 150px;
+	float: right;
+	display: inline-block;
+	padding-top: 24px;
+}
+
+.hello-logo:hover {
+	opacity: .7;
+}
+
+.github-nav {
+	float: right;
+	padding-right: 24px;
+	opacity: .7;
+}
+
+.github-nav:hover {
+	opacity: 1;
+}
+
+.card-icon {
+	padding: 24px 24px 24px 0;
+	opacity: .7;
+	float: left;
+}
+
+.card-icon:hover {
+	opacity: 1;
+}
+
+ol.offerings {
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+/*	align-items: flex-start;*/
+	justify-content: space-between;
+}
+
+.join-us-links {
+	padding: 16px 0 24px;
+}
+
+.join-us-links a {
+	padding-right: 24px;
+}
+
+.join-us-links a:hover {
+	border-bottom: none;
+}
+
+a.project-title , a.project-title:visited {
+	color: inherit;
+}
+
+a.project-title:hover {
+	color: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+/* ------ Article Page ------ */
+
+li {
+	float: left;
+}
+
+#project-header {
+	background-color: #F9F9FA;
+	width: 100%;
+	border-bottom: 1px solid #E9E9F0;
+}
+
+.page-nav a, .page-nav:link a, .page-nav:visited a {
+	display: block;
+	padding: 0 24px 0 24px;
+	color: #999999;
+	font-size: 16px;
+	text-decoration: none;
+	padding-bottom: 16px;
+}
+
+.page-nav:hover a, .page-nav:active a {
+	color: #009CFF;
+	box-shadow: inset 0px -1px 0px 0px #009CFF;
+}
+
+#in-page {
+	padding-top: 72px;
+	display: inline-block;
+}
+
+#overview {
+	display: inline-block;
+}
+
+#project-intro {
+	padding-top: 48px;
+	display: inline-block;
+}
+
+#examples, #download, #contributing, #license {
+	padding-top: 56px;
+}
+
+.page-description {
+	font-size: 16px;
+	font-weight: 300;
+	color: #808080;
+	padding-top: 8px;
 }
