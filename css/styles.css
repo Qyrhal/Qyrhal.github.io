@@ -78,7 +78,7 @@ header {
 	border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(0, 0, 0, 0.1);
-    background: rgb(255, 255, 255);
+    background: #FFFFFF;
     position: fixed;
     width: 100%;
     display: inline-block;
@@ -137,7 +137,7 @@ a.text-link:hover {
 	color: #009CFF;
 }
 
-.footer-hello {
+.footer-q {
 	float: left;
 	display: inline-block;
 	font-size: 16px;
@@ -218,18 +218,6 @@ ol.offerings {
 	flex-flow: row wrap;
 /*	align-items: flex-start;*/
 	justify-content: space-between;
-}
-
-.join-us-links {
-	padding: 16px 0 24px;
-}
-
-.join-us-links a {
-	padding-right: 24px;
-}
-
-.join-us-links a:hover {
-	border-bottom: none;
 }
 
 a.project-title , a.project-title:visited {
