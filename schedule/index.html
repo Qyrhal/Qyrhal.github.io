@@ -11,62 +11,69 @@
     <script async src="https://cse.google.com/cse.js?cx=41562c48b73dd4d31"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm nav-bg-color">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">
-            <span class="logo-text">Midhun</span>
-        </a>
+    <!DOCTYPE html>
+<html lang="en">
 
-    </div>
-</nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-<div class="wrapper">
-    <!--SideBar-->
-    <div class="sidebar">
-      <div class="sidenav-container">
+<body>
+  <header>
+    <h1>Dashboard</h1>
+  </header>
 
-    <div class="sidenav">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </nav>
 
-        <div class="side-link">
-            <a href="#">Dashboard</a>
-            <div></div>
+  <main>
+    <section class="card">
+      <h2>Analytics</h2>
+      <div class="chart"></div>
+    </section>
+
+    <section class="card">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li><Button onclick="moment().format('MM/DD/YYYY hh:mm A');"></Button></li>
+        <li><code>print("hello world")</code></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Notifications</h2>
+      <ul>
+        <li>New message from John Doe</li>
+        <li>Task deadline approaching</li>
+        <li>Server maintenance scheduled</li>
+      </ul>
+    </section>
+
+  <section class="card_calendar">
+        <h2>Google Calendar</h2>
+        <div class="calendar">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Australia%2FMelbourne&mode=WEEK&showTz=1&title=Midhun's%20Calendar&src=a3VtYXJtaWQyMDA1QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=aG5pN29tdTZyOGo2a3ZxZmlpaTNoYTVyY2dwcnJ0ZHNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4tZ2IuYXVzdHJhbGlhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%2333B679&color=%23EF6C00&color=%230B8043" frameborder="0" height="600" width="800"></iframe>
         </div>
+      </section>
+    </main>
 
-        <div class="side-link">
-            <a href="#">Category</a>
-            <div></div>
-        </div>
 
-        <div class="side-link">
-            <a href="#">Link</a>
-            <div></div>
-        </div>
+  <footer>
+    <p>&copy; 2023 The Mid.</p>
+  </footer>
+</body>
 
-        <div class="side-link">
-            <a href="#">Link</a>
-            <div></div>
-        </div>
+</html>
 
-        <div class="side-link">
-            <a href="#">Link</a>
-            <div></div>
-        </div>
-
-    </div>
-
-</div>
-      </div>
-    <!--SideBar End-->
-
-    <!--Body Start-->
-    <div class="body-container">
-      <div class="main-heading text-center text-uppercase">
-    <h1>Calendar | Compass</h1>
-</div>
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23333333&ctz=Australia%2FMelbourne&mode=WEEK&showTz=1&title=Midhun's%20Calendar&src=a3VtYXJtaWQyMDA1QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=aG5pN29tdTZyOGo2a3ZxZmlpaTNoYTVyY2dwcnJ0ZHNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4tZ2IuYXVzdHJhbGlhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%2333B679&color=%23EF6C00&color=%230B8043" frameborder="0"></iframe>
-    </div>
-    <!---Body End--->
-</div>
 </body>
 </html>
 
