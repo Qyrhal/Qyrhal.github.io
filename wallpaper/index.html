@@ -9,8 +9,22 @@
 	  <script type="text/javascript" src="scripts.js"></script>
 	  <link rel="icon" type="image/png" href="img/Qyrhal.png"/>
     <script async src="https://cse.google.com/cse.js?cx=41562c48b73dd4d31"></script>
+    <script>
+        // JavaScript function to get the current day and month
+        function displayDate() {
+          var currentDate = new Date();
+          var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+          var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+          
+          var dayOfWeek = daysOfWeek[currentDate.getDay()];
+          var month = months[currentDate.getMonth()];
+          
+          var dateElement = document.getElementById('date');
+          dateElement.innerHTML = dayOfWeek + ', ' + month + ' ' + currentDate.getDate();
+        }
+    </script>
   </head>
-  <body>
+  <body onload="displayDate()">
     <!--Hey! This is the original version
 of Simple CSS Waves-->
 
@@ -19,7 +33,7 @@ of Simple CSS Waves-->
     <!--Content before waves-->
     <div class="inner-header flex">
     <!--Just the logo.. Don't mind this-->
-    <h1>Midhun</h1>
+    <h1 id="date"></h1>
     <br>
     </div>
     
