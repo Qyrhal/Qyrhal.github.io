@@ -6,6 +6,7 @@ body {
     display: inline-block;
     width: 100%;
     font-weight: 300;
+	cursor: url("img/cursor_design.png"), auto;
 }
 
 body, p, h1, h2, h3, h4, h5, a, ol, li, pre, header {
@@ -280,3 +281,4 @@ li {
 	color: #808080;
 	padding-top: 8px;
 }
+
