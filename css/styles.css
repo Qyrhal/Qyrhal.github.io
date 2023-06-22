@@ -1,6 +1,6 @@
 body {
 	font-family: "Proxima Nova", Helvetica, sans-serif;
-	background-color: #F5F5F7;
+	background-color: #ffffff;
 	font-size: 14px;
     color: #000000;
     display: inline-block;
@@ -44,14 +44,14 @@ h4 {
 p {
 	font-size: 14px;
 	line-height: 22px;
-	color: #808080;
+	color: #000000;
 	font-weight: 300;
 	padding-top: 8px;
 }
 
 pre {
 	background-color: #ffffff;
-	border: 1px solid #E9E9F0;
+	border: 1px solid #ffffff;
 	border-radius: 3px;
 	padding: 24px;
 	white-space: pre-wrap;
@@ -79,7 +79,7 @@ header {
 	border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(0, 0, 0, 0.1);
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.218);
     position: fixed;
     width: 100%;
     display: inline-block;
@@ -278,7 +278,7 @@ li {
 .page-description {
 	font-size: 16px;
 	font-weight: 300;
-	color: #808080;
+	color: #000000;
 	padding-top: 8px;
 }
 
