@@ -1,8 +1,8 @@
 body {
 	font-family: "Proxima Nova", Helvetica, sans-serif;
-	background-color: #ffffff;
+	background-color: #23272a;
 	font-size: 14px;
-    color: #000000;
+    color: #fff;
     display: inline-block;
     width: 100%;
     font-weight: 300;
@@ -44,19 +44,9 @@ h4 {
 p {
 	font-size: 14px;
 	line-height: 22px;
-	color: #000000;
+	color: #888888;
 	font-weight: 300;
 	padding-top: 8px;
-}
-
-pre {
-	background-color: #ffffff;
-	border: 1px solid #ffffff;
-	border-radius: 3px;
-	padding: 24px;
-	white-space: pre-wrap;
-	line-height: 1.4;
-	margin: 16px 0;
 }
 
 main {
@@ -76,15 +66,17 @@ footer {
 }
 
 header {
+	border-bottom-color: #23272a;
 	border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.218);
+    background: rgba(74, 79, 83, 0.5);
     position: fixed;
-    width: 100%;
+    width: 80%;
     display: inline-block;
-    height: 72px;
+    height: 80px;
     z-index: 10000;
+	margin-left: 10%;
+	margin-top: 15px;
+	border-radius: 10px;
 }
 
 header nav, footer nav {
@@ -99,7 +91,7 @@ a.button, a.button:visited {
 	color: white;
 	text-transform: uppercase;
 	font-weight:600;
-	background-color: #009CFF;
+	background-color: #99aab5;
 	margin: 8px 0;
 	padding: 10px 12px 9px 12px;
 	border: 1px solid rgba(0, 0, 0, 0.05);
@@ -117,7 +109,7 @@ a.button:active {
 }
 
 a.text-link {
-	color: #009CFF;
+	color: #99aab5;
 	text-decoration: none;
 }
 
@@ -135,7 +127,7 @@ a.text-link:hover {
 }
 
 .footer-nav:hover a, .footer-nav:active a {
-	color: #009CFF;
+	color: #99aab5;
 }
 
 .footer-q {
@@ -162,14 +154,13 @@ nav#sections li {
 }
 
 ol.offerings li {
-	background: white;
-	border: 1px solid #EBEBF0;
+	background: #2c2f33;
 	border-radius: 3px;
-	box-shadow: 0px 1px 3px 0px rgba(235,235,240,1);
 	padding: 32px 32px 0px 32px;
 	width: 405px;
 	min-height: 160px;
 	margin-top: 20px;
+	border-radius: 10px;
 }
 
 nav > ol {
@@ -253,8 +244,8 @@ li {
 }
 
 .page-nav:hover a, .page-nav:active a {
-	color: #009CFF;
-	box-shadow: inset 0px -1px 0px 0px #009CFF;
+	color: #99aab5;
+	box-shadow: inset 0px -1px 0px 0px #99aab5;
 }
 
 #in-page {
