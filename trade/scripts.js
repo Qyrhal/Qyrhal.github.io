@@ -8,3 +8,7 @@ function calculate() {
     document.getElementById("position_size").innerHTML = position_size;
     document.getElementById("risk_amount").innerHTML = risk_amount;
   }
+
+  function session() {
+    const date = new Date.getTime()
+  }
